@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitmap: https://heydon-lee.github.io/sitemap.xml
+Sitmap: https://heydon-lee.bitbucket.io/sitemap/bitbucket.xml
+Sitmap: https://heydon-lee.gitlab.io/sitemap/gitlab.xml
+Sitmap: https://heydon-lee.gitee.io/sitemap/gitee.xml

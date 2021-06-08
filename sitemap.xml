@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://heydon-lee.github.io/minecraft/java/common_modules/</loc>
+    
+    <lastmod>2021-06-03</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/sponsor/index.html</loc>
+    
+    <lastmod>2021-05-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/minecraft/bedrock/bedrock_server_config_description/</loc>
+    
+    <lastmod>2021-05-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/minecraft/bedrock/texture_package_description/</loc>
+    
+    <lastmod>2021-05-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/minecraft/bedrock/character/</loc>
+    
+    <lastmod>2021-05-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/minecraft/bedrock/fun_map_seed/</loc>
+    
+    <lastmod>2021-05-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/suggest/hardware_ladder_diagram/</loc>
+    
+    <lastmod>2021-05-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/friends/index.html</loc>
+    
+    <lastmod>2021-05-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tools/web/webmasters/</loc>
+    
+    <lastmod>2021-05-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tutorial/android/set_android_dns/</loc>
+    
+    <lastmod>2021-05-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tutorial/windows/download_win10/</loc>
+    
+    <lastmod>2021-05-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/suggest/common_website/</loc>
+    
+    <lastmod>2021-05-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/about/index.html</loc>
+    
+    <lastmod>2021-05-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/webstack/index.html</loc>
+    
+    <lastmod>2021-05-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/suggest/windows_software/</loc>
+    
+    <lastmod>2021-05-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/suggest/uwp_software/</loc>
+    
+    <lastmod>2021-05-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/suggest/browser_plugin/</loc>
+    
+    <lastmod>2021-05-14</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>http://heydon-lee.github.io/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/%E5%AE%89%E5%8D%93/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/Win10/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/%E6%8E%A8%E8%8D%90/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/Android/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/%E5%9F%BA%E5%B2%A9%E7%89%88/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/tags/Java%E7%89%88/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>http://heydon-lee.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/categories/%E6%8E%A8%E8%8D%90/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/categories/%E6%95%99%E7%A8%8B/Windows/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/categories/%E6%95%99%E7%A8%8B/%E5%AE%89%E5%8D%93/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/categories/%E5%B7%A5%E5%85%B7/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/%E5%9F%BA%E5%B2%A9%E7%89%88/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://heydon-lee.github.io/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/Java%E7%89%88/</loc>
+    <lastmod>2021-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>

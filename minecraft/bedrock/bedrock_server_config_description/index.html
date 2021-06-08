@@ -1,0 +1,828 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="喵星书架" href="http://heydon-lee.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="喵星书架" href="http://heydon-lee.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="喵星书架" href="http://heydon-lee.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="Minecraft（我的世界）,基岩版" />
+
+
+<link rel="canonical" href="http://heydon-lee.github.io/minecraft/bedrock/bedrock_server_config_description/">
+
+
+
+  <title>
+我的世界 基岩版：官方服务器配置与使用 - 基岩版 - Minecraft（我的世界） |
+Yume Shoka = 喵星书架 = 现在，我的手抓住了未来</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">我的世界 基岩版：官方服务器配置与使用
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2021-03-28 08:28:35">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-03-28T08:28:35+08:00">2021-03-28</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/" itemprop="item" rel="index" title="分类于 Minecraft（我的世界）"><span itemprop="name">Minecraft（我的世界）</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/%E5%9F%BA%E5%B2%A9%E7%89%88/" itemprop="item" rel="index" title="分类于 基岩版"><span itemprop="name">基岩版</span></a>
+<meta itemprop="position" content="2" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://heydon-lee.github.io/minecraft/bedrock/bedrock_server_config_description/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="海东喵">
+    <meta itemprop="description" content="现在，我的手抓住了未来, 游戏更新 & 编程笔记">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="喵星书架">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="我的世界-基岩版：官方服务器配置与使用"><a href="#我的世界-基岩版：官方服务器配置与使用" class="headerlink" title="我的世界 基岩版：官方服务器配置与使用"></a>我的世界 基岩版：官方服务器配置与使用</h1><h1 id="»-官方免责声明："><a href="#»-官方免责声明：" class="headerlink" title="» 官方免责声明："></a>» 官方免责声明：</h1><ul>
+<li>这是 Mojang 尚未完成的服务器版本（预览版）</li>
+<li>可能有严重的 bug</li>
+<li>Mojang 随时都可以停止支持它</li>
+</ul>
+<br>
+
+<h1 id="»-平台："><a href="#»-平台：" class="headerlink" title="» 平台："></a>» 平台：</h1><h4 id="Linux："><a href="#Linux：" class="headerlink" title="Linux："></a>Linux：</h4><ul>
+<li>将压缩文件解压到一个空文件夹中</li>
+<li>使用以下命令启动服务器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setsid .&#x2F;bedrock_server</span><br></pre></td></tr></table></figure>
+
+<h4 id="Windows："><a href="#Windows：" class="headerlink" title="Windows："></a>Windows：</h4><ul>
+<li>将压缩文件解压到一个空文件夹中</li>
+<li>运行 <code>bedrock_server.exe</code> 文件启动服务器</li>
+<li>在某些系统上，当您希望使用运行在同一台计算机上的客户端连接到服务器时，服务器正在运行，您将需要去除 Minecraft 客户端 的 UWP 环回限制</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CheckNetIsolation.exe LoopbackExempt –a –p&#x3D;S-1-15-2-1958404141-86561845-1752920682-3514627264-368642714-62675701-733520436</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h1 id="»-配置文件："><a href="#»-配置文件：" class="headerlink" title="» 配置文件："></a>» 配置文件：</h1><ul>
+<li>服务器将读取 <code>server.properties</code> 作为服务器的配置文件</li>
+<li>其中一些选项仅在创建新世界时读取</li>
+<li>其他一些选项在每次启动时都会读取</li>
+<li>该文件应包含一个列表，其中的键和值以等号分隔，每行一个</li>
+<li>可以使用以下选项。 如果值为括号中的数字，则可以使用该数字代替文本值</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>可用值</th>
+<th>默认值</th>
+<th>生效时间</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>gamemode</td>
+<td>survival (0)<br>creative (1)<br>adventure (2)</td>
+<td>survival</td>
+<td>新玩家加入</td>
+<td>游戏模式</td>
+</tr>
+<tr>
+<td>difficulty</td>
+<td>peaceful (0)<br>easy (1)<br>normal (2)<br>hard (3)</td>
+<td>easy</td>
+<td>始终</td>
+<td>游戏难度</td>
+</tr>
+<tr>
+<td>level-type</td>
+<td>FLAT<br>LEGACY<br>DEFAULT</td>
+<td>DEFAULT</td>
+<td>生成世界时</td>
+<td>生成世界的类型，建议不修改</td>
+</tr>
+<tr>
+<td>server-name</td>
+<td>任何字符</td>
+<td>Dedicated Server</td>
+<td>始终</td>
+<td>游戏内服务器列表显示的名称</td>
+</tr>
+<tr>
+<td>max-players</td>
+<td>任何正整数</td>
+<td>10</td>
+<td>始终</td>
+<td>服务器玩家上限</td>
+</tr>
+<tr>
+<td>server-port</td>
+<td>0-65535</td>
+<td>19132</td>
+<td>始终</td>
+<td>ipv4 端口号</td>
+</tr>
+<tr>
+<td>server-portv6</td>
+<td>0-65535</td>
+<td>19133</td>
+<td>始终</td>
+<td>ipv6 端口号</td>
+</tr>
+<tr>
+<td>level-name</td>
+<td>任何字符</td>
+<td>level</td>
+<td>始终</td>
+<td><code>/worlds</code> 文件夹中的地图文件夹名称</td>
+</tr>
+<tr>
+<td>level-seed</td>
+<td>任何字符</td>
+<td></td>
+<td>生成世界时</td>
+<td>如果为空将在生成时使用随机种子</td>
+</tr>
+<tr>
+<td>online-mode</td>
+<td>true<br>false</td>
+<td>true</td>
+<td>始终</td>
+<td>正版验证（登录Xbox账号）</td>
+</tr>
+<tr>
+<td>white-list</td>
+<td>true<br>false</td>
+<td>false</td>
+<td>始终</td>
+<td>开启白名单</td>
+</tr>
+<tr>
+<td>allow-cheats</td>
+<td>true<br>false</td>
+<td>false</td>
+<td>始终</td>
+<td>开启作弊（只限管理员）</td>
+</tr>
+<tr>
+<td>view-distance</td>
+<td>任何正整数</td>
+<td>10</td>
+<td>始终</td>
+<td>玩家最大视距</td>
+</tr>
+<tr>
+<td>player-idle-timeout</td>
+<td>任何正整数</td>
+<td>30</td>
+<td>始终</td>
+<td>挂机N秒后踢出服务器</td>
+</tr>
+<tr>
+<td>max-threads</td>
+<td>任何正整数</td>
+<td>8</td>
+<td>始终</td>
+<td>服务器最大线程数<br>设置为0自动调整（不建议）</td>
+</tr>
+<tr>
+<td>tick-distance</td>
+<td>4-12的整数</td>
+<td>4</td>
+<td>始终</td>
+<td>玩家周围加载区块的范围<br>值越大越影响服务器性能</td>
+</tr>
+<tr>
+<td>default-player-permission-level</td>
+<td>visitor<br>member<br>operator</td>
+<td>member</td>
+<td>始终</td>
+<td>新加入玩家的权限</td>
+</tr>
+<tr>
+<td>texturepack-required</td>
+<td>true<br>false</td>
+<td>false</td>
+<td>始终</td>
+<td>强制使用服务器的材质包</td>
+</tr>
+</tbody></table>
+<br>
+
+<h1 id="»-文件夹："><a href="#»-文件夹：" class="headerlink" title="» 文件夹："></a>» 文件夹：</h1><ul>
+<li>解压后，您将看到一些文件夹和二进制可执行文件</li>
+<li>第一次启动服务器时，将创建一堆新（空）文件夹</li>
+<li>您应该关注的文件夹如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>文件夹</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>behavior_packs</td>
+<td>这是可以安装新行为包的地方<br>目前没有实装，可以安装在地图里</td>
+</tr>
+<tr>
+<td>resource_packs</td>
+<td>这是可以安装新资源包的地方<br>目前没有也没有实装，也可以安装在地图里</td>
+</tr>
+<tr>
+<td>worlds</td>
+<td>如果该文件夹尚不存在，则将在启动时创建该文件夹<br>创建的每个世界都将有一个根据其命名的文件夹</td>
+</tr>
+</tbody></table>
+<br>
+
+<h1 id="»-白名单："><a href="#»-白名单：" class="headerlink" title="» 白名单："></a>» 白名单：</h1><ul>
+<li><p>如果在 <code>server.properties</code> 将 <code>white-list</code> 设置为 <code>true</code></p>
+</li>
+<li><p>服务器将只允许 <code>whitelist.json</code> 列表中的玩家进入服务器</p>
+</li>
+<li><p>允许玩家进入服务器必须知道玩家的 <code>游戏昵称</code>（即登录 Xbox 后显示的名字）</p>
+</li>
+<li><p>添加一名玩家进入白名单只需要执行命令 <code>whitelist add &lt;游戏昵称&gt;</code></p>
+</li>
+<li><p>从白名单中删除一名玩家只需要执行命令 <code>whitelist remove &lt;游戏昵称&gt;</code></p>
+</li>
+<li><p>每次修改白名单后都必须执行命令 <code>whitelist reload</code> 才会刷新白名单</p>
+</li>
+<li><p><code>whitelist.json</code> 中参数如下</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>键</th>
+<th>数据类型</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>字符串</td>
+<td>玩家的游戏昵称</td>
+</tr>
+<tr>
+<td>xuid</td>
+<td>字符串</td>
+<td>可选参数，一般填 <code>name</code> 的值这个就不用填了，该玩家登陆后会自动补充</td>
+</tr>
+<tr>
+<td>ignoresPlayerLimit</td>
+<td>布尔值</td>
+<td>true：玩家在超过服务器人数上限时可以加入服务器<br>false：玩家不能在超过服务器人数上限时加入服务器</td>
+</tr>
+</tbody></table>
+<ul>
+<li><code>whitelist.json</code> 文件示例：</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">&quot;ignoresPlayerLimit&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;MyPlayer&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">&quot;ignoresPlayerLimit&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;AnotherPlayer&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;xuid&quot;</span>: <span class="string">&quot;274817248&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h1 id="»-权限组："><a href="#»-权限组：" class="headerlink" title="» 权限组："></a>» 权限组：</h1><ul>
+<li>可以通过 <code>permissions.json</code> 给特定玩家分配特定的权限</li>
+<li>分配权限的玩家必须具有是登录Xbox账号进入服务器的玩家（因为需要他们的 xuid）</li>
+<li>可以使用 <code>permissions list</code> 命令罗列出所有拥有特殊权限的玩家</li>
+<li><code>permissions.json</code> 文件示例：</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">&quot;permission&quot;</span>: <span class="string">&quot;operator&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;xuid&quot;</span>: <span class="string">&quot;451298348&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">&quot;permission&quot;</span>: <span class="string">&quot;member&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;xuid&quot;</span>: <span class="string">&quot;52819329&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">&quot;permission&quot;</span>: <span class="string">&quot;visitor&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;xuid&quot;</span>: <span class="string">&quot;234114123&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p>Commands<br>You can issue commands to the server by typing in the console. The following commands are available. &lt; &gt; means a parameter is required, [ ] means it’s optional and | denotes different allowed values. Strings can be enclosed in double quotes, “, if they contain spaces.</p>
+<p>Command syntax    Description<br>kick <player name or xuid> <reason>    Immediately kicks a player. The reason will be shown on the kicked players screen.<br>stop    Shuts down the server gracefully.<br>save &lt;hold | resume | query&gt;    Used to make atomic backups while the server is running. See the backup section for more information.<br>whitelist &lt;on | off | list | reload&gt;<br>on and off turns the whitelist on and off. Note that this does not change the value in the server.properties file!</p>
+<p>list prints the current whitelist used by the server</p>
+<p>reload makes the server reload the whitelist from the file.</p>
+<p>See the Whitelist section for more information.</p>
+<p>whitelist &lt;add | remove&gt; <name>    Adds or removes a player from the whitelist file. The name parameter should be the Xbox Gamertag of the player you want to add or remove. You don’t need to specify a XUID here, it will be resolved the first time the player connects.</p>
+<p>See the Whitelist section for more information.<br>permissions &lt;list | reload&gt;<br>list prints the current used operator list.</p>
+<p>reload makes the server reload the operator list from the ops file.</p>
+<p>See the Permissions section for more information.</p>
+<p>op <player><br>Promote a player to operator. This will also persist in permissions.json if the player is authenticated to XBL. If permissions.json is missing it will be created. If the player is not connected to XBL, the player is promoted for the current server session and it will not be persisted on disk. Defualt server permission level will be assigned to the player after a server restart.</p>
+<p>deop <player><br>Demote a player to member. This will also persist in permissions.json if the player is authenticated to XBL. If permissions.json is missing it will be created.</p>
+<p>changesetting <setting> <value>    Changes a server setting without having to restart the server. Currently only two settings are supported to be changed, allow-cheats (true or false) and difficulty (0, peaceful, 1, easy, 2, normal, 3 or hard). They do not modify the value that’s specified in server.properties.<br>Backups<br>The server supports taking backups of the world files while the server is running. It’s not particularly friendly for taking manual backups, but works better when automated. The backup (from the servers perspective) consists of three commands.</p>
+<p>Command    Description<br>save hold    This will ask the server to prepare for a backup. It’s asynchronous and will return immediately.<br>save query    After calling save hold you should call this command repeatedly to see if the preparation has finished. When it returns a success it will return a file list (with lengths for each file) of the files you need to copy. The server will not pause while this is happening, so some files can be modified while the backup is taking place. As long as you only copy the files in the given file list and truncate the copied files to the specified lengths, then the backup should be valid.<br>save resume    When you’re finished with copying the files you should call this to tell the server that it’s okay to remove old files again.</p>
+
+      <div class="tags">
+          <a href="/tags/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/" rel="tag"><i class="ic i-tag"></i> Minecraft（我的世界）</a>
+          <a href="/tags/%E5%9F%BA%E5%B2%A9%E7%89%88/" rel="tag"><i class="ic i-tag"></i> 基岩版</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2021-05-16 16:03:12" itemprop="dateModified" datetime="2021-05-16T16:03:12+08:00">2021-05-16</time>
+  </span>
+  <span id="minecraft/bedrock/bedrock_server_config_description/" class="item leancloud_visitors" data-flag-title="我的世界 基岩版：官方服务器配置与使用" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="海东喵 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="海东喵 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>海东喵 <i class="ic i-at"><em>@</em></i>喵星书架
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://heydon-lee.github.io/minecraft/bedrock/bedrock_server_config_description/" title="我的世界 基岩版：官方服务器配置与使用">http://heydon-lee.github.io/minecraft/bedrock/bedrock_server_config_description/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/minecraft/bedrock/fun_map_seed/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliierfjj20zk0m8npd.jpg" title="我的世界 基岩版：好用的地图种子">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 基岩版</span>
+  <h3>我的世界 基岩版：好用的地图种子</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/minecraft/java/common_modules/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh3brzpj20zk0m8ann.jpg" title="我的世界 Java版：常见模组">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> Java版</span>
+  <h3>我的世界 Java版：常见模组</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C-%E5%9F%BA%E5%B2%A9%E7%89%88%EF%BC%9A%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">我的世界 基岩版：官方服务器配置与使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%C2%BB-%E5%AE%98%E6%96%B9%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E%EF%BC%9A"><span class="toc-number">2.</span> <span class="toc-text">» 官方免责声明：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%C2%BB-%E5%B9%B3%E5%8F%B0%EF%BC%9A"><span class="toc-number">3.</span> <span class="toc-text">» 平台：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Linux%EF%BC%9A"><span class="toc-number">3.0.0.1.</span> <span class="toc-text">Linux：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Windows%EF%BC%9A"><span class="toc-number">3.0.0.2.</span> <span class="toc-text">Windows：</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%C2%BB-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">» 配置文件：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%C2%BB-%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%9A"><span class="toc-number">5.</span> <span class="toc-text">» 文件夹：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%C2%BB-%E7%99%BD%E5%90%8D%E5%8D%95%EF%BC%9A"><span class="toc-number">6.</span> <span class="toc-text">» 白名单：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%C2%BB-%E6%9D%83%E9%99%90%E7%BB%84%EF%BC%9A"><span class="toc-number">7.</span> <span class="toc-text">» 权限组：</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/minecraft/bedrock/character/" rel="bookmark" title="我的世界 基岩版：字符集">我的世界 基岩版：字符集</a></li><li class="active"><a href="/minecraft/bedrock/bedrock_server_config_description/" rel="bookmark" title="我的世界 基岩版：官方服务器配置与使用">我的世界 基岩版：官方服务器配置与使用</a></li><li><a href="/minecraft/bedrock/fun_map_seed/" rel="bookmark" title="我的世界 基岩版：好用的地图种子">我的世界 基岩版：好用的地图种子</a></li><li><a href="/minecraft/bedrock/texture_package_description/" rel="bookmark" title="我的世界 基岩版：材质包中的文件说明">我的世界 基岩版：材质包中的文件说明</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="海东喵"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">海东喵</p>
+  <div class="description" itemprop="description">游戏更新 & 编程笔记</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">13</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">9</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">12</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleWRvbi1sZWU=" title="https:&#x2F;&#x2F;github.com&#x2F;heydon-lee"><i class="ic i-github"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOmhleWRvbi1sZWVAb3V0bG9vay5jb20=" title="mailto:heydon-lee@outlook.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-magic"></i>链环</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>喵友</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/webstack/" rel="section"><i class="ic i-link"></i>链接</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/sponsor/" rel="section"><i class="ic i-heartbeat"></i>赞助</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/minecraft/bedrock/fun_map_seed/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/minecraft/java/common_modules/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/" title="分类于 Minecraft（我的世界）">Minecraft（我的世界）</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/Java%E7%89%88/" title="分类于 Java版">Java版</a>
+</div>
+
+    <span><a href="/minecraft/java/common_modules/" title="我的世界 Java版：常见模组">我的世界 Java版：常见模组</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%B7%A5%E5%85%B7/" title="分类于 工具">工具</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%B7%A5%E5%85%B7/%E7%BD%91%E7%AB%99/" title="分类于 网站">网站</a>
+</div>
+
+    <span><a href="/tools/web/webmasters/" title="网站管理员工具">网站管理员工具</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/" title="分类于 Minecraft（我的世界）">Minecraft（我的世界）</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/%E5%9F%BA%E5%B2%A9%E7%89%88/" title="分类于 基岩版">基岩版</a>
+</div>
+
+    <span><a href="/minecraft/bedrock/bedrock_server_config_description/" title="我的世界 基岩版：官方服务器配置与使用">我的世界 基岩版：官方服务器配置与使用</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%8E%A8%E8%8D%90/" title="分类于 推荐">推荐</a>
+</div>
+
+    <span><a href="/suggest/windows_software/" title="推荐 Windows 软件">推荐 Windows 软件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/" title="分类于 Minecraft（我的世界）">Minecraft（我的世界）</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/%E5%9F%BA%E5%B2%A9%E7%89%88/" title="分类于 基岩版">基岩版</a>
+</div>
+
+    <span><a href="/minecraft/bedrock/fun_map_seed/" title="我的世界 基岩版：好用的地图种子">我的世界 基岩版：好用的地图种子</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%99%E7%A8%8B/" title="分类于 教程">教程</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E6%95%99%E7%A8%8B/%E5%AE%89%E5%8D%93/" title="分类于 安卓">安卓</a>
+</div>
+
+    <span><a href="/tutorial/android/set_android_dns/" title="设置DNS（安卓篇）">设置DNS（安卓篇）</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/" title="分类于 Minecraft（我的世界）">Minecraft（我的世界）</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/%E5%9F%BA%E5%B2%A9%E7%89%88/" title="分类于 基岩版">基岩版</a>
+</div>
+
+    <span><a href="/minecraft/bedrock/texture_package_description/" title="我的世界 基岩版：材质包中的文件说明">我的世界 基岩版：材质包中的文件说明</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%8E%A8%E8%8D%90/" title="分类于 推荐">推荐</a>
+</div>
+
+    <span><a href="/suggest/browser_plugin/" title="推荐浏览器插件">推荐浏览器插件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%8E%A8%E8%8D%90/" title="分类于 推荐">推荐</a>
+</div>
+
+    <span><a href="/suggest/uwp_software/" title="推荐 UWP 软件">推荐 UWP 软件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/" title="分类于 Minecraft（我的世界）">Minecraft（我的世界）</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Minecraft%EF%BC%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%89/%E5%9F%BA%E5%B2%A9%E7%89%88/" title="分类于 基岩版">基岩版</a>
+</div>
+
+    <span><a href="/minecraft/bedrock/character/" title="我的世界 基岩版：字符集">我的世界 基岩版：字符集</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2021</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">海东喵 @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'minecraft/bedrock/bedrock_server_config_description/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.2.4/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js,npm/animejs@3.2.1/lib/anime.min.js,npm/algoliasearch@4.9.1/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4.22.0/dist/instantsearch.production.min.js,npm/lozad@1.16.0/dist/lozad.min.js,npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
